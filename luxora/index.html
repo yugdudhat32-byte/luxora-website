@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>LUXORA | Premium Website Design Studio</title>
+
+<meta name="description" content="LUXORA is a premium website design studio creating responsive, conversion-focused websites for businesses in the USA, Canada and worldwide.">
+
+<meta property="og:title" content="LUXORA | Digital Experiences. Elevated."><meta property="og:type" content="website">
+
+<meta property="og:description" content="Premium, responsive, conversion-focused websites for ambitious businesses.">
+
+<script type="application/ld+json">{"@context":"https\://schema.org","@type":"Organization","name":"LUXORA","description":"Premium website design studio serving businesses in the USA, Canada and worldwide."}</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http\://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✦%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https\://fonts.googleapis.com"><link rel="preconnect" href="https\://fonts.gstatic.com" crossorigin>
+
+<link href="https\://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{--bg:#F8F6F1;--bg2:#FFFFFF;--tx:#191919;--mut:#77736D;--gold:#C6A66B;--line:rgba(25,25,25,.14);--gt:#8a6d35;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141311;--bg2:#1d1b18;--tx:#F3EFE7;--mut:#a29c92;--line:rgba(243,239,231,.16);--gt:#C6A66B;color-scheme:dark}}
+
+:root[data-theme="dark"]{--bg:#141311;--bg2:#1d1b18;--tx:#F3EFE7;--mut:#a29c92;--line:rgba(243,239,231,.16);--gt:#C6A66B;color-scheme:dark}
+
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+
+*{box-sizing:border-box}
+
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 'Instrument Sans',system-ui,sans-serif}
+
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0 0 .5em;letter-spacing:-.01em}
+
+h1{font-size:clamp(3rem,9vw,7.2rem)}h2{font-size:clamp(2.1rem,5vw,3.6rem)}h3{font-size:1.7rem}
+
+p{margin:0 0 1em;max-width:62ch}a{color:inherit}
+
+.w{max-width:1160px;margin:0 auto;padding:0 24px}.sec{padding-block:84px;border-top:1px solid var(--line)}
+
+.skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--tx);color:var(--bg);padding:10px 16px;border:0;font:inherit;cursor:pointer}.skip:focus{left:8px}main:focus{outline:none}
+
+.cap{font-size:.8rem;color:var(--mut);padding:10px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.mini{display:flex;gap:16px;font-size:.72rem;color:var(--mut);margin-left:auto;flex-wrap:wrap}
+
+.mut{color:var(--mut)}.g{color:var(--gt)}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+
+.logo{font:600 1.7rem 'Cormorant Garamond',serif;letter-spacing:.28em;text-decoration:none}
+
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}nav a{text-decoration:none;font-size:.92rem;padding:6px 0;border-bottom:1px solid transparent}
+
+nav a:hover,nav a[aria-current]{border-color:var(--gold)}
+
+.btn{display:inline-block;font:500 .95rem 'Instrument Sans',sans-serif;padding:14px 26px;border:1px solid var(--tx);background:var(--tx);color:var(--bg);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+
+.btn:hover{background:transparent;color:var(--tx)}.btn.o{background:transparent;color:var(--tx)}.btn.o:hover{background:var(--tx);color:var(--bg)}
+
+.btn.s{padding:9px 16px;font-size:.85rem}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+.ic{background:none;border:1px solid var(--line);color:var(--tx);width:40px;height:40px;cursor:pointer;font-size:1rem}
+
+#mb{display:none}
+
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+main{transition:opacity .25s}main.out{opacity:0}
+
+.hero{padding-block:72px 90px;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+
+.hero p{font-size:1.15rem}
+
+.bw{border:1px solid var(--line);background:var(--bg2);box-shadow:18px 18px 0 -1px var(--gold)}
+
+.bw .bar{height:28px;border-bottom:1px solid var(--line);display:flex;gap:6px;align-items:center;padding:0 10px}
+
+.bw .bar i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+
+.grid{display:grid;gap:28px}.g3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+
+.card{background:var(--bg2);border:1px solid var(--line);display:flex;flex-direction:column}
+
+.card .b{padding:24px;display:flex;flex-direction:column;flex:1}.card .b p{flex:1}
+
+.art{aspect-ratio:4/3;display:block;width:100%}
+
+ul.ck{padding:0;list-style:none;margin:0 0 20px}ul.ck li{padding:6px 0 6px 22px;border-bottom:1px solid var(--line);position:relative;font-size:.93rem}
+
+ul.ck li::before{content:"";position:absolute;left:0;top:15px;width:10px;height:1px;background:var(--gold)}
+
+.tag{font-size:.78rem;color:var(--mut);border:1px solid var(--line);padding:2px 9px;display:inline-block;margin:0 6px 6px 0}
+
+.note{border-left:2px solid var(--gold);padding:10px 16px;background:var(--bg2);font-size:.92rem;margin:20px 0}
+
+.tl{border-left:1px solid var(--gold);margin-left:14px;padding-left:34px}.tl>div{position:relative;padding-bottom:42px}
+
+.tl>div::before{content:attr(data-n);position:absolute;left:-52px;top:0;width:36px;height:36px;border-radius:50%;background:var(--bg);border:1px solid var(--gold);display:grid;place-items:center;font:600 1.1rem 'Cormorant Garamond',serif}
+
+details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font:500 1.45rem 'Cormorant Garamond',serif;list-style:none;display:flex;justify-content:space-between}
+
+summary::after{content:"+";color:var(--gt)}details[open] summary::after{content:"–"}details p{margin:12px 0 0}
+
+label{display:block;font-size:.88rem;margin:16px 0 6px}
+
+input,select,textarea{width:100%;padding:12px;font:inherit;background:var(--bg2);color:var(--tx);border:1px solid var(--line);border-radius:0}
+
+input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:#b3261e}.err{color:#b3261e;font-size:.82rem;min-height:1em}
+
+.hp{position:absolute;left:-9999px}
+
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.pills button{padding:9px 16px;border:1px solid var(--line);background:none;color:var(--tx);cursor:pointer;font:inherit;font-size:.9rem}
+
+.pills button[aria-pressed=true]{background:var(--tx);color:var(--bg)}
+
+.price{font:500 3.2rem 'Cormorant Garamond',serif}
+
+dialog{border:1px solid var(--line);background:var(--bg);color:var(--tx);max-width:760px;width:92%;padding:0}dialog::backdrop{background:rgba(0,0,0,.55)}
+
+.dh{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid var(--line)}.dbody{padding:24px}
+
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .2s;z-index:15;background:var(--bg2)}#top.on{opacity:1;pointer-events:auto}
+
+footer{border-top:1px solid var(--line);padding:56px 0 36px;font-size:.9rem}footer .grid{grid-template-columns:2fr 1fr 1fr}
+
+@media(max-width:860px){.hero{grid-template-columns:1fr}.bw{box-shadow:10px 10px 0 -1px var(--gold)}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 24px}nav.open{display:block}nav ul{flex-direction:column;gap:6px}nav a{display:block;padding:10px 0}#mb{display:block}footer .grid{grid-template-columns:1fr}.g2{grid-template-columns:1fr}.sec{padding-block:60px}.hero{padding-block:44px 60px}}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+</style></head><body>
+
+<button class="skip" id="sk">Skip to content</button>
+
+<header><div class="w nav"><a class="logo" href="#home">LUXORA</a>
+
+<nav id="nav" aria-label="Main"><ul id="nl"></ul></nav>
+
+<div class="row"><button class="ic" id="th" aria-label="Toggle light or dark theme">◐</button><button class="ic" id="mb" aria-label="Open menu" aria-expanded="false">☰</button></div></div></header>
+
+<main id="m" tabindex="-1"></main>
+
+<footer><div class="w grid"><div><div class="logo">LUXORA</div><p class="mut">Digital Experiences. Elevated.<br>Premium website design for businesses in the USA, Canada and worldwide.</p></div>
+
+<div id="fl"></div><div><p><b>Start a project</b></p><p class="mut">Use the enquiry form and we’ll reply by email.</p><a class="btn s" href="#contact">Request a Website</a></div></div>
+
+<div class="w mut" style="margin-top:32px;font-size:.8rem">© 2026 LUXORA. Portfolio projects shown are fictional concepts, not client work.</div></footer>
+
+<button class="ic" id="top" aria-label="Back to top">↑</button>
+
+<dialog id="dlg" aria-label="Details"><div class="dh"><b id="dt"></b><button class="ic" id="dx" aria-label="Close">✕</button></div><div class="dbody" id="db"></div></dialog>
+
+<script>
+
+// ===== CONFIG: set these before launch =====
+
+const CONFIG = {
+
+  email: "jayshreecreation32@gmail.com",
+
+  whatsapp: "919601359591"
+
+}; // whatsapp: digits with country code, e.g. 14165550123
+
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+const PAGES=[["home","Home"],["about","About"],["services","Services"],["industries","Industries"],["portfolio","Portfolio"],["process","Process"],["pricing","Pricing"],["faq","FAQ"],["contact","Contact"]];
+
+const META={home:"Premium website design studio",about:"About",services:"Services",industries:"Industries",portfolio:"Portfolio",process:"Our Process",pricing:"Pricing",faq:"FAQ",contact:"Contact"};
+
+const DESC={home:"LUXORA designs premium, responsive, conversion-focused websites for ambitious businesses.",about:"Our mission, design philosophy and approach to building websites.",services:"Business sites, e-commerce, landing pages, redesigns, SEO, WhatsApp integration and more.",industries:"Website design for boutiques, salons, restaurants, real estate, professional services and creative studios.",portfolio:"Fictional concept projects showing the LUXORA design approach.",process:"Our five-step website design process from discovery to launch.",pricing:"Transparent starting prices for Essential, Professional and Signature websites.",faq:"Answers on timelines, pricing, payment, revisions, hosting and ownership.",contact:"Tell us about your project and request a website."};
+
+const SV=[["Business Website Development","A considered, brand-led website that explains what you do and makes enquiring easy.",["Clear structure","Mobile-first build","Easy to update"]],
+
+["E-commerce Website Development","A storefront with catalogue, cart and checkout, scoped around your products.",["Product catalogue","Checkout setup","Quoted separately"]],
+
+["Landing Page Design","One focused page built around a single action for a campaign or launch.",["Single clear goal","Fast loading","Form or call to action"]],
+
+["Website Redesign","A fresh design and cleaner structure for a site that no longer represents you.",["Content audit","Modern design","Preserved page addresses where useful"]],
+
+["Website Maintenance","Ongoing updates, content changes and checks after launch.",["Content edits","Software updates","Issue fixes"]],
+
+["Website SEO Setup","Page titles, descriptions, sitemap and structured data so search engines understand your site.",["Metadata","Sitemap and robots.txt","Image alt text"]],
+
+["WhatsApp Integration","A chat button and prefilled message so customers can reach you in one tap.",["Click-to-chat","Prefilled message","Works on mobile and desktop"]],
+
+["Website Performance Optimization","Image, font and code improvements aimed at faster, smoother pages.",["Image optimization","Lazy loading","Font loading"]]];
+
+const IN=[["fashion","Fashion & Boutique","Editorial lookbooks and refined product storytelling for labels and boutiques.",["Lookbook galleries","Product catalogue","Instagram links"],["#d8c5ad","#2b2521","#C6A66B"]],
+
+["beauty","Beauty & Salon","Soft, reassuring design that turns visitors into bookings.",["Service menu","Booking enquiry","Before and after gallery"],["#e8d4cf","#3a2a2c","#C6A66B"]],
+
+["restaurant","Restaurant & Cafe","Atmospheric sites where the menu and reservations come first.",["Menu pages","Reservation request","Opening hours and map"],["#2a2522","#F3EFE7","#C6A66B"]],
+
+["realestate","Real Estate","Clean listings and confident presentation for agents and developers.",["Property listings","Enquiry per listing","Area guides"],["#cfd3cc","#222622","#C6A66B"]],
+
+["services","Professional Services","Credible, calm design for clinics, consultants and firms.",["Service pages","Appointment enquiry","Team and credentials"],["#d9dde3","#1f242b","#C6A66B"]],
+
+["interior","Interior Design & Creative Studios","Image-led portfolios with generous space and quiet typography.",["Project galleries","Case study pages","Enquiry form"],["#e2d8c8","#2c2a26","#C6A66B"]]];
+
+const PR=[["AURELLE","Luxury Fashion Boutique","fashion","A concept boutique site with lookbook and product catalogue.",["Catalogue","Lookbook","Filtering"]],
+
+["VELVET","Premium Beauty Salon","beauty","A concept salon site with service menu and booking enquiry.",["Service menu","Booking form","Gallery"]],
+
+["NOIR","Fine Dining Restaurant","restaurant","A concept restaurant site with tasting menu and reservations.",["Menu","Reservations","Map"]],
+
+["ESTATE","Luxury Real Estate","realestate","A concept property site with listings and enquiry flow.",["Listings","Search filters","Enquiry"]],
+
+["ATELIER","Interior Design Studio","interior","A concept studio site with project galleries and case studies.",["Galleries","Case studies","Contact"]],
+
+["MEDORA","Professional Clinic","services","A concept clinic site with services and appointment requests.",["Services","Appointment request","FAQ"]]];
+
+const PS=[["Discovery and Requirements","We learn about your business, audience, goals, content and constraints, and agree what the site needs to do."],["Planning and Strategy","We define the page structure, features and content plan, then confirm scope and timeline."],["UI/UX Design","We design the look, typography and layout for desktop and mobile, and refine it with your feedback."],["Development and Testing","We build the site and test navigation, forms, responsiveness and accessibility basics."],["Launch and Handover","We publish the site, hand over access and files, and show you how to manage it."]];
+
+const FQ=[["How long does a website take?","It depends on size and how quickly content and feedback arrive. A small site is typically faster than a 10-page site; we give a timeline after the discovery call."],["How is pricing structured?","Packages start at $199, $299 and $499. Complex integrations, e-commerce, hosting, domains and third-party services may cost extra, and we quote these before work begins."],["How does payment work?","We agree payment terms in writing before starting. Nothing is charged automatically from this website."],["How many revisions are included?","Revision rounds are agreed in the project scope so expectations are clear on both sides."],["Who handles hosting and domain?","Hosting and domain are separate costs. We can guide you or set them up on your own accounts."],["Do you offer maintenance?","Yes. Website Maintenance covers content updates and routine checks after launch."],["Do you work with international clients?","Yes. We work remotely with businesses in the USA, Canada and worldwide."],["Who owns the website?","You do. Files and access are handed over at launch, subject to third-party licence terms."],["Can you build an online store?","Yes. E-commerce is scoped and quoted separately because requirements vary."]];
+
+const PK=[["Essential",199,["Up to 3 pages","Responsive design","Contact form","Basic SEO setup"]],["Professional",299,["Up to 6 pages","Custom premium design","Contact integration","Basic SEO","Smooth animations"]],["Signature",499,["Up to 10 pages","Advanced UI/UX","Catalogue or service sections","Advanced interactions","SEO setup"]]];
+
+const BASE={"Business website":150,"Landing page":100,"Portfolio / catalogue site":200,"E-commerce site":350};
+
+const FEAT={"Animations & interactions":60,"Catalogue / service sections":50,"Multi-language":80,"Blog":50};
+
+const INTG={"WhatsApp chat button":20,"Booking / reservation enquiry":50,"Newsletter signup":30,"Analytics setup":30};
+
+const TOP=["Explore","Start"];
+
+function art(c,s){const [a,b,g]=c;const v=s%3;const sh=v==0?`<circle cx="200" cy="150" r="70" fill="${b}"/><rect x="40" y="215" width="320" height="2" fill="${g}"/>`:v==1?`<rect x="110" y="40" width="110" height="190" fill="${b}"/><rect x="230" y="110" width="70" height="120" fill="${g}"/>`:`<path d="M60 230 L200 50 L340 230Z" fill="${b}"/><circle cx="300" cy="80" r="22" fill="${g}"/>`;return`<svg class="art" viewBox="0 0 400 300" role="img" aria-label="Abstract illustration for the industry" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="${a}"/>${sh}</svg>`}
+
+const H=(s,...a)=>s.reduce((r,x,i)=>r+x+(a[i]??""),"");
+
+const lst=a=>`<ul class="ck">${a.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+
+const cta=(t,h,o)=>`<a class="btn ${o?"o":""} s" href="${h}">${t}</a>`;
+
+let draft="";
+
+const V={
+
+home(){return H`<div class="w hero"><div><h1>Your Vision. Our Digital Craft.</h1><p>We design exceptional digital experiences that help ambitious businesses stand out, connect, and grow.</p><div class="row"><a class="btn" href="#portfolio">Explore Our Work</a><a class="btn o" href="#contact">Start Your Project</a></div></div>
+
+<figure class="bw" style="margin:0" aria-label="Preview of the ATELIER fictional concept website"><div class="bar"><i></i><i></i><i></i><span class="mini"><span>Projects</span><span>Studio</span><span>Contact</span></span></div>${art(IN[5][4],0)}<div style="padding:18px 18px 6px"><div style="font:500 1.9rem/1 'Cormorant Garamond',serif">ATELIER</div><div class="mut" style="font-size:.85rem">Interior design studio</div></div><figcaption class="cap"><span>Fictional concept project</span><a href="#portfolio">See all concepts</a></figcaption></figure></div>
+
+<section class="sec"><div class="w"><h2>Services</h2><div class="grid g3">${SV.map(s=>`<div class="card"><div class="b"><h3>${s[0]}</h3><p class="mut">${s[1]}</p>${cta("Learn more","#services","o")}</div></div>`).join("")}</div></div></section>
+
+<section class="sec"><div class="w"><h2>Choose your industry</h2><div class="pills" id="sel">${IN.map((x,i)=>`<button aria-pressed="${i==0}" data-i="${i}">${x[1]}</button>`).join("")}</div><div class="grid g2" id="selv" aria-live="polite"></div></div></section>
+
+<section class="sec"><div class="w"><h2>Featured concept projects</h2><p class="mut">Fictional concepts that show our approach. They are not client work.</p><div class="grid g3">${PR.slice(0,3).map(pc).join("")}</div></div></section>
+
+<section class="sec"><div class="w"><h2>Why choose LUXORA</h2><div class="grid g3"><div><h3>Considered design</h3><p class="mut">Generous space, editorial type and restrained detail, tailored to your brand.</p></div><div><h3>Built to work on any screen</h3><p class="mut">Mobile-first layouts, semantic code and accessible navigation.</p></div><div><h3>Clear, honest scope</h3><p class="mut">Fixed starting prices and a written scope before work begins.</p></div></div></div></section>
+
+<section class="sec"><div class="w"><h2>How we work</h2><p class="mut">Five clear steps from first conversation to launch.</p><div class="tl">${PS.map((p,i)=>`<div data-n="${i+1}"><h3>${p[0]}</h3><p class="mut">${p[1]}</p></div>`).join("")}</div><a class="btn o s" href="#process">See the full process</a></div></section>
+
+<section class="sec"><div class="w"><h2>Pricing preview</h2><div class="grid g3">${PK.map(pk).join("")}</div>${nt()}</div></section>
+
+<section class="sec"><div class="w"><h2>Questions</h2>${FQ.slice(0,4).map(fq).join("")}<p style="margin-top:24px">${cta("All FAQs","#faq","o")}</p></div></section>
+
+<section class="sec"><div class="w"><h2>Ready to build something worth visiting?</h2><p class="mut">Tell us about your business and we’ll recommend the right package.</p><a class="btn" href="#contact">Start Your Project</a></div></section>`},
+
+about(){return H`<div class="w sec" style="border:0"><h1>About LUXORA</h1><p style="font-size:1.2rem">LUXORA is a premium digital website design studio creating beautiful, responsive, conversion-focused websites for businesses across industries.</p>
+
+<div class="grid g2" style="margin-top:48px"><div><h3>Our mission</h3><p class="mut">To give ambitious businesses a website that looks as considered as the work they do, and helps customers take the next step.</p></div><div><h3>Design philosophy</h3><p class="mut">Restraint over decoration. Strong typography, clear hierarchy and space let your content lead.</p></div><div><h3>How we build</h3><p class="mut">Mobile-first, semantic and accessible code, with sensible performance and SEO foundations from day one.</p></div><div><h3>Studio values</h3>${lst(["Clarity in scope and price","Craft in every detail","Respect for your brand","Honest communication"])}</div></div>
+
+<h2 style="margin-top:60px">Why work with us</h2><p class="mut">Premium design with transparent pricing, a clear process, and a site you own at launch. We work remotely with clients in the USA, Canada and worldwide.</p><a class="btn" href="#contact">Start Your Project</a></div>`},
+
+services(){return H`<div class="w sec" style="border:0"><h1>Services</h1><div class="grid g2">${SV.map(s=>`<div class="card"><div class="b"><h3>${s[0]}</h3><p class="mut">${s[1]}</p>${lst(s[2])}<div class="row"><button class="btn s" data-req="${s[0]}">Request this service</button></div></div></div>`).join("")}</div></div>`},
+
+industries(){return H`<div class="w sec" style="border:0"><h1>Industries</h1><div class="grid g3">${IN.map((x,i)=>`<div class="card">${art(x[4],i)}<div class="b"><h3>${x[1]}</h3><p class="mut">${x[2]}</p>${lst(x[3])}<div class="row"><button class="btn o s" data-demo="${i}">View Demo</button><button class="btn s" data-req="${x[1]} website">Request a Website</button></div></div></div>`).join("")}</div></div>`},
+
+portfolio(){return H`<div class="w sec" style="border:0"><h1>Portfolio</h1><div class="note">All projects below are <b>fictional concepts</b> created by LUXORA to demonstrate our approach. They are not real client work.</div>
+
+<div class="pills" id="pf"><button aria-pressed="true" data-f="all">All</button>${IN.map(x=>`<button aria-pressed="false" data-f="${x[0]}">${x[1]}</button>`).join("")}</div><div class="grid g3" id="pg">${PR.map(pc).join("")}</div></div>`},
+
+process(){return H`<div class="w sec" style="border:0"><h1>Our process</h1><div class="tl">${PS.map((p,i)=>`<div data-n="${i+1}"><h3>${p[0]}</h3><p class="mut">${p[1]}</p></div>`).join("")}</div><a class="btn" href="#contact">Start Your Project</a></div>`},
+
+pricing(){return H`<div class="w sec" style="border:0"><h1>Pricing</h1><div class="grid g3">${PK.map(pk).join("")}</div>${nt()}<p><button class="btn o" data-req="Custom quote request">Request Custom Quote</button></p>
+
+<h2 style="margin-top:64px">Estimate your project</h2><div class="grid g2" style="align-items:start"><div id="calc"><label for="ct">Website type</label><select id="ct">${Object.keys(BASE).map(k=>`<option>${k}</option>`).join("")}</select><label for="cp">Number of pages: <b id="cpv">5</b></label><input id="cp" type="range" min="1" max="15" value="5"><fieldset style="border:0;padding:0;margin:16px 0 0"><legend style="font-size:.88rem">Features</legend>${Object.keys(FEAT).map(k=>`<label style="margin:6px 0"><input type="checkbox" class="cf" value="${k}" style="width:auto"> ${k}</label>`).join("")}</fieldset><fieldset style="border:0;padding:0;margin:16px 0 0"><legend style="font-size:.88rem">Additional integrations</legend>${Object.keys(INTG).map(k=>`<label style="margin:6px 0"><input type="checkbox" class="ci" value="${k}" style="width:auto"> ${k}</label>`).join("")}</fieldset></div>
+
+<div class="card"><div class="b"><p class="mut">Estimated price</p><div class="price" id="cv" aria-live="polite"></div><p class="mut" style="font-size:.88rem">This is an estimate, not a binding quote. E-commerce, hosting, domain and third-party services may cost extra.</p><button class="btn" id="cs">Send these requirements</button></div></div></div></div>`},
+
+faq(){return H`<div class="w sec" style="border:0"><h1>FAQ</h1>${FQ.map(fq).join("")}</div>`},
+
+contact(){return H`<div class="w sec" style="border:0"><h1>Request a website</h1><div class="grid g2" style="align-items:start"><form id="f" novalidate><div class="hp" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+${[["name","Full name","text"],["email","Email address","email"],["biz","Business name","text"],["country","Country","text"]].map(a=>`<label for="${a[0]}">${a[1]}</label><input id="${a[0]}" name="${a[0]}" type="${a[2]}" ${a[0]=="biz"?"":"required"}><div class="err" id="e-${a[0]}"></div>`).join("")}
+
+<label for="ind">Industry</label><select id="ind" required><option value="">Select</option>${IN.map(x=>`<option>${x[1]}</option>`).join("")}<option>Other</option></select><div class="err" id="e-ind"></div>
+
+<label for="typ">Required website type</label><select id="typ" required><option value="">Select</option>${Object.keys(BASE).map(k=>`<option>${k}</option>`).join("")}</select><div class="err" id="e-typ"></div>
+
+<label for="bud">Estimated budget</label><select id="bud"><option value="">Select</option><option>Under $300</option><option>$300 – $500</option><option>$500 – $1,000</option><option>$1,000+</option></select>
+
+<label for="msg">Project description</label><textarea id="msg" rows="6" required minlength="20"></textarea><div class="err" id="e-msg"></div>
+
+<p style="margin-top:16px"><button class="btn" id="fs" type="submit">Prepare my enquiry</button></p><div id="fm" role="status" aria-live="polite"></div></form>
+
+<div><h3>Other ways to reach us</h3><p class="mut">Prefer email or chat? Use the options below.</p><div class="row"><button class="btn o s" id="em">Email us</button><button class="btn o s" id="wa">WhatsApp</button></div><div class="note" id="cn"></div></div></div></div>`}};
+
+function pc(p){const i=IN.findIndex(x=>x[0]==p[2]);const x=IN[i];return`<div class="card" data-ind="${p[2]}">${art(x[4],i+1)}<div class="b"><span class="tag" style="align-self:flex-start">Fictional concept</span><h3>${p[0]}</h3><p class="mut" style="margin-bottom:6px">${p[1]}</p><p class="mut">${p[3]}</p><div>${p[4].map(t=>`<span class="tag">${t}</span>`).join("")}</div><div class="row"><button class="btn s" data-pd="${PR.indexOf(p)}">Live Demo</button><button class="btn o s" data-cs="${PR.indexOf(p)}">View Case Study</button></div></div></div>`}
+
+function pk(p,i){return`<div class="card" ${i==1?'style="border-color:var(--gold)"':""}><div class="b"><h3>${p[0]}</h3><div class="price">$${p[1]}</div>${lst(p[2])}<button class="btn ${i==1?"":"o"} s" data-req="${p[0]} package">Choose ${p[0]}</button></div></div>`}
+
+function nt(){return`<div class="note">Complex integrations, e-commerce, hosting, domain and third-party services may cost extra. Nothing is charged automatically from this site.</div>`}
+
+function fq(q){return`<details><summary>${q[0]}</summary><p class="mut">${q[1]}</p></details>`}
+
+// ===== modal =====
+
+const dlg=$("#dlg");function modal(t,h){$("#dt").textContent=t;$("#db").innerHTML=h;dlg.showModal()}
+
+$("#dx").onclick=()=>dlg.close();dlg.addEventListener("click",e=>{if(e.target==dlg)dlg.close()});
+
+function mock(c,name,sub,items){return`<div style="background:${c[0]};color:${c[1]};padding:28px;border:1px solid var(--line)"><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.8rem;margin-bottom:36px"><b style="letter-spacing:.2em">${name}</b><span>${items.join("  |  ")}</span></div><div style="font:500 2.6rem/1.05 'Cormorant Garamond',serif;max-width:12ch">${sub}</div><div style="margin-top:28px;display:inline-block;border:1px solid ${c[1]};padding:8px 16px;font-size:.85rem">Enquire</div></div><p class="mut" style="margin-top:14px;font-size:.88rem">Fictional concept preview. Not a real business or client project.</p>`}
+
+// ===== router =====
+
+const NAV=$("#nl");NAV.innerHTML=PAGES.map(p=>`<li><a href="#${p[0]}" data-p="${p[0]}">${p[1]}</a></li>`).join("");
+
+$("#fl").innerHTML=`<p><b>Explore</b></p>`+PAGES.slice(1).map(p=>`<a href="#${p[0]}" style="display:block;padding:2px 0">${p[1]}</a>`).join("");
+
+let cur="";
+
+function go(){let p=(location.hash||"#home").slice(1);if(!V[p])p="home";const m=$("#m");const run=()=>{m.innerHTML=V[p]();cur=p;document.title=(p=="home"?"LUXORA | Premium Website Design Studio":META[p]+" | LUXORA");
+
+let d=$('meta[name=description]');d.content=DESC[p];$$("nav a").forEach(a=>a.toggleAttribute("aria-current",a.dataset.p==p));$("#nav").classList.remove("open");$("#mb").setAttribute("aria-expanded","false");window.scrollTo(0,0);init(p);m.focus({preventScroll:true});m.classList.remove("out")};
+
+if(cur&&cur!=p&&!matchMedia("(prefers-reduced-motion:reduce)").matches){m.classList.add("out");setTimeout(run,220)}else run()}
+
+addEventListener("hashchange",go);
+
+// ===== page logic =====
+
+function init(p){
+
+if(p=="home"){const sel=i=>{const x=IN[i];$("#selv").innerHTML=`<div class="card">${art(x[4],i)}</div><div><h3>${x[1]}</h3><p class="mut">${x[2]}</p>${lst(x[3])}<button class="btn s" data-req="${x[1]} website">Request a Website</button></div>`;$$("#sel button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.i==i))};$$("#sel button").forEach(b=>b.onclick=()=>sel(+b.dataset.i));sel(0)}
+
+if(p=="portfolio")$$("#pf button").forEach(b=>b.onclick=()=>{$$("#pf button").forEach(x=>x.setAttribute("aria-pressed",x==b));$$("#pg .card").forEach(c=>c.hidden=!(b.dataset.f=="all"||c.dataset.ind==b.dataset.f))});
+
+if(p=="pricing"){const up=()=>{const pg=+$("#cp").value;$("#cpv").textContent=pg;let t=BASE[$("#ct").value]+Math.max(0,pg-3)*25;$$(".cf:checked").forEach(c=>t+=FEAT[c.value]);$$(".ci:checked").forEach(c=>t+=INTG[c.value]);$("#cv").textContent="$"+t.toLocaleString("en-US");return t};$$("#calc input,#calc select").forEach(e=>e.oninput=up);up();
+
+$("#cs").onclick=()=>{const t=up();draft=`Calculator estimate: $${t} (estimate only)\nType: ${$("#ct").value}\nPages: ${$("#cp").value}\nFeatures: ${$$(".cf:checked").map(c=>c.value).join(", ")||"none"}\nIntegrations: ${$$(".ci:checked").map(c=>c.value).join(", ")||"none"}\n`;location.hash="contact"}}
+
+if(p=="contact")contact()}
+
+function contact(){
+  const f=$("#f"),msg=$("#msg");
+  if(draft){msg.value=draft;draft=""}
+
+  $("#cn").textContent=CONFIG.email||CONFIG.whatsapp
+    ?"Replies come from the contact details configured by the studio."
+    :"Contact email and WhatsApp number are not configured yet. Set them in CONFIG at the top of the page script.";
+
+  const gmailCompose=(body="")=>{
+    const url=`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONFIG.email)}&su=${encodeURIComponent("Website enquiry")}&body=${encodeURIComponent(body)}`;
+    window.open(url,"_blank");
+  };
+
+  $("#em").onclick=()=>{
+    if(CONFIG.email) gmailCompose();
+    else say("Email address is not configured yet.",1);
+  };
+
+  $("#wa").onclick=()=>{
+    if(CONFIG.whatsapp) window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hello LUXORA, I’d like to discuss a website project.")}`,"_blank");
+    else say("WhatsApp number is not configured yet.",1);
+  };
+
+  function say(t,e){
+    const o=$("#fm");
+    o.textContent=t;
+    o.className=e?"err":"g";
+  }
+
+  f.onsubmit=ev=>{
+    ev.preventDefault();
+    if(f.website.value)return;
+
+    let ok=true;
+    const chk=(id,fn,m)=>{
+      const el=$("#"+id),bad=!fn(el.value.trim());
+      el.setAttribute("aria-invalid",bad);
+      $("#e-"+id).textContent=bad?m:"";
+      if(bad)ok=false;
+    };
+
+    chk("name",v=>v.length>1,"Enter your full name.");
+    chk("email",v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),"Enter a valid email address.");
+    chk("country",v=>v.length>1,"Enter your country.");
+    chk("ind",v=>!!v,"Select an industry.");
+    chk("typ",v=>!!v,"Select a website type.");
+    chk("msg",v=>v.length>=20,"Describe your project in at least 20 characters.");
+
+    if(!ok){
+      say("Please fix the highlighted fields.",1);
+      return;
+    }
+
+    const body=`Name: ${$("#name").value}
+Email: ${$("#email").value}
+Business: ${$("#biz").value}
+Country: ${$("#country").value}
+Industry: ${$("#ind").value}
+Type: ${$("#typ").value}
+Budget: ${$("#bud").value}
+
+${msg.value}`;
+
+    if(CONFIG.email){
+      say("Opening a Gmail compose window. Review the enquiry and press Send in Gmail.");
+      // Open synchronously from the submit click so browsers are less likely to block it.
+      gmailCompose(body);
+    }else{
+      say("Your enquiry is ready, but no contact email is configured. Copy the text below and send it manually.",1);
+      let t=$("#cp2");
+      if(!t){
+        t=document.createElement("textarea");
+        t.id="cp2";
+        t.rows=8;
+        t.readOnly=true;
+        t.setAttribute("aria-label","Enquiry text");
+        $("#fm").after(t);
+      }
+      t.value=body;
+    }
+  };
+}
+
+// ===== global handlers =====
+
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+
+if(t.dataset.req){draft=`Request: ${t.dataset.req}\n`;location.hash="contact"}
+
+if(t.dataset.demo!=null){const x=IN[+t.dataset.demo];modal(x[1]+" demo",mock(x[4],x[1].split(" ")[0].toUpperCase(),"A concept layout for "+x[1].toLowerCase(),["Home","Services","Contact"]))}
+
+if(t.dataset.pd!=null){const p=PR[+t.dataset.pd],x=IN.find(i=>i[0]==p[2]);modal(p[0]+" live demo",mock(x[4],p[0],p[1],p[4]))}
+
+if(t.dataset.cs!=null){const p=PR[+t.dataset.cs];modal(p[0]+" case study",`<span class="tag">Fictional concept</span><h3>${p[1]}</h3><p>${p[3]}</p><p class="mut"><b>Goal:</b> show how a ${p[2]} business could present itself clearly and drive enquiries.<br><b>Features:</b> ${p[4].join(", ")}.</p><p class="mut">This case study describes a concept created by LUXORA, not a real client engagement.</p>`)}});
+
+$("#mb").onclick=()=>{const o=$("#nav").classList.toggle("open");$("#mb").setAttribute("aria-expanded",o)};
+
+$("#th").onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+
+addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>600),{passive:true});$("#top").onclick=()=>scrollTo({top:0});
+
+$("#sk").onclick=()=>$("#m").focus();
+
+go();
+
+</script></body></html>
