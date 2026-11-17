@@ -7,7 +7,7 @@ Open `index.html` in a browser, or upload it to any static host (Netlify, Vercel
 
 ## Configure before launch
 In the `<script>` block, edit:
-    const CONFIG={email:"jayshreecreation32@gmail.com",whatsapp:"+91 9601359591"};
+    const CONFIG={email:"yugdudhat32@gmail.com",whatsapp:"+91 9601359591"};
 - email: your contact address (the form opens the visitor's email app with the enquiry filled in)
 - whatsapp: digits with country code, e.g. 14165550123
 
